@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Diegofergamboa/time-tracking-dashboard-main/issues"
   },
-  "homepage": "https://github.com/Diegofergamboa/time-tracking-dashboard-main#readme"
+  "homepage": "https://github.com/Diegofergamboa/time-tracking-dashboard-main#readme",
+  "dependencies": {
+    "http-server": "^14.1.0"
+  }
 }
