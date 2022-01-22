@@ -1,6 +1,5 @@
 
-/* Colors */
-
+/* Variables */
 
 :root {
     /* Primary */
@@ -17,15 +16,7 @@
     --blue-dark-neutral: hsl(235, 46%, 20%);
     --blue-desaturated-neutral: hsl(235, 45%, 61%);
     --blue-pale-neutral: hsl(236, 100%, 87%);
+
+    /*Font family*/
+    --rubik-font: 'Rubik', sans-serif;
 }
-
-## Typography
-
-### Body Copy
-
-- Font size: 18px (card titles e.g. Work, Play)
-
-### Font
-
-- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
-- Weights: 300, 400, 500
