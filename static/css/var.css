@@ -1,0 +1,31 @@
+
+/* Colors */
+
+
+:root {
+    /* Primary */
+    --blue-primary: hsl(246, 80%, 60%) ; 
+    --red-primary: hsl(15, 100%, 70%) ;
+    --blue-soft-primary: hsl(195, 74%, 62%);
+    --red-light-primary: hsl(348, 100%, 68%);
+    --green-lime-primary: hsl(145, 58%, 55%);
+    --violet-primary : hsl(264, 64%, 52%);
+    --orange-soft-primary : hsl(43, 84%, 65%);
+
+    /* Neutral */
+    --blue-very-dark-neutral: hsl(226, 43%, 10%);
+    --blue-dark-neutral: hsl(235, 46%, 20%);
+    --blue-desaturated-neutral: hsl(235, 45%, 61%);
+    --blue-pale-neutral: hsl(236, 100%, 87%);
+}
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px (card titles e.g. Work, Play)
+
+### Font
+
+- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 300, 400, 500
