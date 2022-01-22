@@ -2,11 +2,15 @@
 // Organize the divs
 
 // fetch
+document.addEventListener("ONContentLoaded", 
+    loadDailyActivity() 
+);
 
-document.addEventListener("DOMContentLoaded" , () => {
-    loadActivity();
-});
+// loadMonthlyActivity();
+// loadWeeklyActivity();
+// loadDailyActivity();
 
+getActivity ()
 const task = document.getElementsByClassName('div-task');
 
 function getActivity () {
@@ -20,14 +24,20 @@ function getActivity () {
         console.log('ERROR CON FETCH FUNCTION');
     });
 }
-async function loadActivity() {
+async function loadDailyActivity() {
     const activities = await getActivity();
     let html = '';
     activities.forEach(activity => {
         html += `
-            <div></div>
-            <div></div>
+            <div>
+                <p>${activity.title}</p>
+                <p>${activity.current}hrs</p>
+            </div>
+            <div>
+                <img src="/images/icon-ellipsis.svg" alt="imagen de puntos suspensivos">
+                <p>Last Daily - ${activity.previous}</p>
+            </div>
         `
-    });(activity => {
-
-    })
+    });
+    document.getElementsByClassName("task")[0].innerHTML = html;
+)})
