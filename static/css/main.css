@@ -10,50 +10,123 @@
 body {
     font-family: var(--rubik-font);
     display: grid;
-    grid-template-rows: repeat(7, 1fr);
-    justify-content: center;
+    grid-template-rows: repeat(7, 250px);
+    gap: 24px;
+    justify-items: center;
     background-color: var(--blue-very-dark-neutral);
     color: #ffffff;
 }
-div {
+
+/* Profile section */
+
+.section-profile {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.6rem;
+    background-color: var(--blue-dark-neutral);
+    width: 300px;
+    height: 150px;
     border-radius: 8px;
 }
 
-.section-profile {
+.section-profile .information-profile {
     display: flex;
-
-}
-
-.container-task {
-    display: grid;
-    position: relative;
-    background-color: white;
-    min-width: 300px;
-    max-width: 770px;
-    width: 300px;
-    height: 150px;
-    margin-bottom: 170px;
-}
-
-.div-task {
-    position: absolute;
-    background-color: red;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    background-color: var(--blue-primary);
+    border-radius: 8px;
     width: inherit;
-    height: 150px;
-    top: 50px;
-    margin-top: 16px;
-}
-.div-task div {
-    display: grid;
-    color: seagreen;
+    height: 120px;
 }
 
-.section-profile button {
+.section-profile .profile-image {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 1px #ffffff solid ;
+    margin-right: 16px;
+}
+
+.section-profile .p-profile {
     display: flex;
-    text-align: center;
-    justify-content: space-between;
-    text-decoration: none;
-    list-style: none;
+    flex-direction: column;
+    align-content: center;
+    text-align: left;
 }
 
+.p-profile :nth-child(1) {
+    font-size: 0.6rem;
+    font-weight: 300;
+    color: var(--blue-pale-neutral);
+}
+.p-profile :nth-child(2) {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: inherit;
+}
+.buttons button{
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 0.6rem;
+    color: var(--blue-pale-neutral);
+    border: none;
+    margin: 16px;
+}
+.buttons button :active {
+    color: #ffffff;
+}
 
+/* cards section */
+
+    /* }
+    .container-task {
+        display: grid;
+        position: relative;
+        background-color: white;
+        min-width: 300px;
+        max-width: 770px;
+        width: 300px;
+        height: 150px;
+        margin-bottom: 170px;
+    }
+    
+    .div-task {
+        position: absolute;
+        background-color: red;
+        width: inherit;
+        height: 150px;
+        top: 50px;
+        margin-top: 16px;
+    }
+    .div-task div {
+        display: grid;
+        color: seagreen;
+    }
+    
+    .section-profile button {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    */
+    /* .section-tasks {
+        border-radius: 8px;
+        height: 250px;
+        font-family: 16.2%;
+    } */
