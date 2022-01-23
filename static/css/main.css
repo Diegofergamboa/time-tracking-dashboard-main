@@ -91,42 +91,23 @@ body {
 
 /* cards section */
 
-    /* }
-    .container-task {
-        display: grid;
-        position: relative;
-        background-color: white;
-        min-width: 300px;
-        max-width: 770px;
-        width: 300px;
-        height: 150px;
-        margin-bottom: 170px;
-    }
-    
-    .div-task {
-        position: absolute;
-        background-color: red;
-        width: inherit;
-        height: 150px;
-        top: 50px;
-        margin-top: 16px;
-    }
-    .div-task div {
-        display: grid;
-        color: seagreen;
-    }
-    
-    .section-profile button {
-        display: flex;
-        text-align: center;
-        justify-content: space-between;
-        text-decoration: none;
-        list-style: none;
-    }
-    
-    */
-    /* .section-tasks {
-        border-radius: 8px;
-        height: 250px;
-        font-family: 16.2%;
-    } */
+.container-task {
+    display: grid;
+    position: relative;
+    background-color: white;
+    height: 95px;
+    min-width: 300px;
+    max-width: 770px;
+    width: 300px;
+    border-radius: 16px;
+}
+
+.div-task {
+    position: absolute;
+    background-color: var(--blue-dark-neutral);
+    width: inherit;
+    height: 60px;
+    top: 20px;
+    margin-top: 16px;
+    border-radius: 16px;
+}

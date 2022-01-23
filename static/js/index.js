@@ -23,21 +23,25 @@ function getActivity () {
     });
 }
 
-const task = document.getElementsByClassName('div-task');
+
 async function loadDailyActivity() {
     const objectActivities = await getActivity();
-    const listTask = objectActivities.map(activity => {
-        return  ` <div>
+    let html = '';
+    const activities = objectActivities.map(activity => {
+        return ` 
+                <div class="container-task">
+                <div class="div-task">
                     <p>${activity.title}</p>
                     <p>${activity.timeframes.daily.current}hrs</p>
-                </div>
-                <div>
+                    <div class="progress">
                     <img src="/images/icon-ellipsis.svg" alt="imagen de puntos suspensivos">
                     <p>Last Daily - ${activity.timeframes.daily.previous}</p>
+                    </div> 
                 </div>
                 `
-        })
-        task[0].innerHTML = listTask.join('');
-    }
-//     });
-//     document.getElementsByClassName("task")[0].innerHTML = html;
+    });
+    const container = document.getElementsByClassName("section-tasks");container[0].innerHTML = activities.join('');
+}
+    
+
+
