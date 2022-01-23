@@ -27,7 +27,6 @@ const task = document.getElementsByClassName('div-task');
 async function loadDailyActivity() {
     const objectActivities = await getActivity();
     const listTask = objectActivities.map(activity => {
-        // console.log(activity.timeframes.daily)
         return  ` <div>
                     <p>${activity.title}</p>
                     <p>${activity.timeframes.daily.current}hrs</p>
