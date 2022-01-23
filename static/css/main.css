@@ -139,12 +139,12 @@ body {
     width: 15px;
     height: 5px;
     color: var(--blue-pale-neutral);
+    margin-bottom: 10px;
 }
 .progress .progress-p {
     color: var(--blue-pale-neutral);
     font-size: 0.6rem;
     font-weight: 300;
-
 }
 /* 
 div task display flex
