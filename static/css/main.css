@@ -85,8 +85,9 @@ body {
     border: none;
     margin: 16px;
 }
-.buttons button :active {
-    color: #ffffff;
+.btn:active{
+    color: white;
+    font-size: 0.7rem;
 }
 
 /* cards section */
@@ -151,13 +152,15 @@ body {
     font-size: 0.6rem;
     font-weight: 300;
 }
-/* 
-div task display flex
-div-task-p display column // 1 hijo 
-div-task-p-title 
-div-task-p-current 
 
-progress 
-progress-image (tres punticos)
-progress-p (El last)
-*/
+/* Footer */
+.attribution {
+    display: flex; 
+    height: 100px;
+    align-items: flex-start;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
