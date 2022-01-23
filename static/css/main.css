@@ -100,6 +100,7 @@ body {
     max-width: 770px;
     width: 300px;
     border-radius: 16px;
+    margin-bottom: 24px;
 }
 
 .div-task {
