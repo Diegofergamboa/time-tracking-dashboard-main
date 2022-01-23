@@ -103,6 +103,9 @@ body {
 }
 
 .div-task {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     position: absolute;
     background-color: var(--blue-dark-neutral);
     width: inherit;
@@ -111,3 +114,45 @@ body {
     margin-top: 16px;
     border-radius: 16px;
 }
+.div-task .div-task-p {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.div-task-p .div-task-p-title {
+    font-size: 0.6rem;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.div-task-p-current  {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.progress {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+}
+.progress .progress-image {
+    width: 15px;
+    height: 5px;
+    color: var(--blue-pale-neutral);
+}
+.progress .progress-p {
+    color: var(--blue-pale-neutral);
+    font-size: 0.6rem;
+    font-weight: 300;
+
+}
+/* 
+div task display flex
+div-task-p display column // 1 hijo 
+div-task-p-title 
+div-task-p-current 
+
+progress 
+progress-image (tres punticos)
+progress-p (El last)
+*/

@@ -31,17 +31,28 @@ async function loadDailyActivity() {
         return ` 
                 <div class="container-task">
                 <div class="div-task">
-                    <p>${activity.title}</p>
-                    <p>${activity.timeframes.daily.current}hrs</p>
+                    <div class="div-task-p">
+                    <p class="div-task-p-title">${activity.title}</p>
+                    <p class="div-task-p-current">${activity.timeframes.daily.current}hrs</p>
+                    </div>
                     <div class="progress">
-                    <img src="/images/icon-ellipsis.svg" alt="imagen de puntos suspensivos">
-                    <p>Last Daily - ${activity.timeframes.daily.previous}</p>
+                    <img class="progress-image"src="/images/icon-ellipsis.svg" alt="imagen de puntos suspensivos">
+                    <p class="progress-p">Last Daily - ${activity.timeframes.daily.previous}</p>
                     </div> 
                 </div>
                 `
     });
     const container = document.getElementsByClassName("section-tasks");container[0].innerHTML = activities.join('');
 }
-    
 
 
+/* 
+div task display flex
+div-task-p display column // 1 hijo 
+div-task-p-title 
+div-task-p-current 
+
+progress 
+progress-image (tres punticos)
+progress-p (El last)
+*/
