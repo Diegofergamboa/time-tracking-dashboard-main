@@ -42,7 +42,8 @@ async function loadDailyActivity() {
                 </div>
                 `
     });
-    const container = document.getElementsByClassName("section-tasks");container[0].innerHTML = activities.join('');
+    const container = document.getElementsByClassName("section-tasks");
+    container[0].innerHTML = activities.join('');
 }
 
 
