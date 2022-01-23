@@ -101,8 +101,9 @@ body {
     border-radius: 16px;
     margin-bottom: 24px;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position:right;
+    background-size: 70px;
+    background-position: right;
+    background-position-y: -15px;
 }
 
 
