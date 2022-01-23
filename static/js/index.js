@@ -26,19 +26,20 @@ function getActivity () {
 
 async function loadDailyActivity() {
     const objectActivities = await getActivity();
-    let html = '';
+
     const activities = objectActivities.map(activity => {
         return ` 
                 <div class="container-task">
                 <div class="div-task">
-                    <div class="div-task-p">
-                    <p class="div-task-p-title">${activity.title}</p>
-                    <p class="div-task-p-current">${activity.timeframes.daily.current}hrs</p>
-                    </div>
-                    <div class="progress">
-                    <img class="progress-image"src="/images/icon-ellipsis.svg" alt="imagen de puntos suspensivos">
-                    <p class="progress-p">Last Daily - ${activity.timeframes.daily.previous}</p>
-                    </div> 
+                <div class="div-task-p">
+                <p class="div-task-p-title">${activity.title}</p>
+                <p class="div-task-p-current">${activity.timeframes.daily.current}hrs</p>
+                </div>
+                <div class="progress">
+                <img class="progress-image"src="/images/icon-ellipsis.svg" alt="imagen de puntos suspensivos">
+                <p class="progress-p">Last Daily - ${activity.timeframes.daily.previous}</p>
+                </div> 
+                </div>
                 </div>
                 `
     });
