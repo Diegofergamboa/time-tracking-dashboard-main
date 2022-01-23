@@ -29,7 +29,7 @@ async function loadDailyActivity() {
 
     const activities = objectActivities.map(activity => {
         return ` 
-                <div class="container-task">
+                <div class="container-task" style="background-image:url('${activity.image}'); background-color: var(${activity.color})">
                 <div class="div-task">
                 <div class="div-task-p">
                 <p class="div-task-p-title">${activity.title}</p>

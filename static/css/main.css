@@ -94,14 +94,17 @@ body {
 .container-task {
     display: grid;
     position: relative;
-    background-color: white;
     height: 95px;
     min-width: 300px;
     max-width: 770px;
     width: 300px;
     border-radius: 16px;
     margin-bottom: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:right;
 }
+
 
 .div-task {
     display: flex;
