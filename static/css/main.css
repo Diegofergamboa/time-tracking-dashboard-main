@@ -164,3 +164,17 @@ body {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+@media only screen and (min-width: 1000px) {
+    body {
+        display: flex;
+        align-content: center;
+        /* justify-content: center; */
+        justify-items: space around;
+    }
+    .section-profile {
+        height: 400px;
+        display: grid;
+        align-items: center;
+    }
+}
