@@ -168,13 +168,37 @@ body {
 @media only screen and (min-width: 1000px) {
     body {
         display: flex;
+        align-items: center;
+        margin-top: calc(100% - 80%);
         align-content: center;
-        /* justify-content: center; */
-        justify-items: space around;
     }
     .section-profile {
-        height: 400px;
+        height: 440px;
+        width: 200px;
+        margin-left: 40px;
+        margin-bottom: 15px;
+    }
+    .section-profile .information-profile {
+        height: 280px;
+    }
+    .buttons {
         display: grid;
+        grid-template-columns: 1fr;
+        justify-items: left;
+    }
+    .section-tasks {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-content: center;
+    }
+    .container-task {
+        display: block;
+        height: 200px;
+    }
+    .div-task {
+        display: flex;
         align-items: center;
+        height: 150px;
+        margin-top: 50px;
     }
 }
