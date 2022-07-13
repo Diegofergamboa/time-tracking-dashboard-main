@@ -10,8 +10,8 @@
 body {
     font-family: var(--rubik-font);
     display: grid;
-    grid-template-rows: repeat(7, 250px);
     gap: 25px;
+    margin: 40px;
     justify-items: center;
     justify-content: center;
     align-items: center;
@@ -172,7 +172,7 @@ body {
     body {
         display: flex;
         align-items: center;
-        margin-top: calc(100% - 80%);
+        margin-top: calc(15%);
         align-content: center;
     }
     .section-profile {
@@ -197,6 +197,7 @@ body {
     .container-task {
         display: block;
         height: 200px;
+        margin: 15px;
     }
     .div-task {
         display: flex;
